@@ -28,8 +28,11 @@
 
 lab3/
 ├── index.html
+
 ├── style.css
+
 ├── app.js
+
 └── README.md
 
 ## Запуск локально

@@ -27,6 +27,7 @@
 ## Структура проекта
 
 lab3/
+
 ├── index.html
 
 ├── style.css

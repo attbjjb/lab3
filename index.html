@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Доска публикаций — Лабораторная работа №3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Доска публикаций</h1>
+    <p class="subtitle">Лабораторная работа №3 — Асинхронный JavaScript и REST API</p>
+  </header>
+
+  <main class="container">
+    <!-- ===== Блок 1: загрузка публикаций (GET) ===== -->
+    <section class="card">
+      <h2>Публикации</h2>
+      <button id="loadBtn" class="btn btn-primary" type="button">
+        Загрузить публикации
+      </button>
+      <div id="posts" class="posts"></div>
+    </section>
+
+    <!-- ===== Блок 2: создание публикации (POST) ===== -->
+    <section class="card">
+      <h2>Создать публикацию</h2>
+      <form id="postForm" class="form" novalidate>
+        <div class="field">
+          <label for="title">Заголовок</label>
+          <input
+            id="title"
+            name="title"
+            type="text"
+            placeholder="Введите заголовок"
+            autocomplete="off"
+          >
+        </div>
+        <div class="field">
+          <label for="body">Текст</label>
+          <textarea
+            id="body"
+            name="body"
+            rows="4"
+            placeholder="Введите текст публикации"
+          ></textarea>
+        </div>
+        <button id="createBtn" class="btn btn-success" type="submit">
+          Создать публикацию
+        </button>
+      </form>
+    </section>
+
+    <!-- ===== Область сообщений (загрузка / успех / ошибка) ===== -->
+    <div id="message" class="message" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
